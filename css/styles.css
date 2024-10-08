@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: normal;
+    src: url(fonts\helvetica_regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    src: url(fonts\helvetica_bold.ttf) format(truetype);
+}
+
+html {
+    --black: #212121;
+    --light-gray: #E9EBED;
+    --green: #2ECC87;
+    --white: #FFFFFF;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--white);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 75px;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--black);
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 1rem;
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 0.4rem;
+}
+
+p, li {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: var(--black);
+    line-height: 1rem;
+}
+
+li::marker {
+    font-size: 2vw;
+}
+
+ul {
+    list-style-image: url('../files/TimeTree_Green_Symbol.svg');
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+video {
+    width: 70%;
+    border: 3px solid var(--green);
+    border-radius: 4px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.content {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    padding: 1rem;
+    width: 50%;
+    min-width: 200px;
+}
