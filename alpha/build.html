@@ -14,11 +14,14 @@
     </header>
 
     <div class="alpha-container">
-        <div class="sidebar-modal collapsed">
-            <p>hi</p>
+        <div class="sidebar-modal collapsed" id="sidebar">
+            <div class="field">
+                <p>hi</p>
+            </div>
+
         </div>
         <input type="checkbox" id="memo"/>
-        <ul class="sidebar">
+        <ul class="sidebar" id="content">
             <li class="sidebar-item">
                 <label for="memo"><span class="icon memo"></span></label>
                 <div class="tagline">
@@ -56,8 +59,6 @@
             <h2>Triggers</h2>
             <ul>
                 <li>Hover On</li>
-                <li>Hover On + On Icon</li>
-                <li>Hover On + Off Icon</li>
                 <li>Hover Off</li>
                 <li>On Click (Mouse Up)</li>
             </ul>
@@ -70,33 +71,19 @@
                     <ul>
                         <li>Cursor changes to finger.</li>
                         <li>Square area around icon quickly fades from white to light gray.</li>
-                        <li>Rounded green bar quickly fades in on the right edge of the square area.</li>
                         <li>"Memo" tagline appears to the left of the square area.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + On Icon</b>
-                    <ul>
-                        <li>Alt tag appears below the cursor.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + Off Icon</b>
-                    <ul>
-                        <li>Alt tag below the cursor disappears.</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
                         <li>Cursor changes back to pointer.</li>
                         <li>Square area around icon quickly fades back to white.</li>
-                        <li>Rounded green bar quickly fades out.</li>
                         <li>"Memo" tagline disappears.</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
                         <li>Side panel slides in from the right side of the screen.</li>
-                        <li>Square area around icon changes from light gray to light green.</li>
-                        <li>Rounded green bar remains active.</li>
                     </ul>
                 </li>
             </ul>
@@ -108,16 +95,6 @@
                         <li>"Memo" tagline appears to the left of the square area.</li>
                     </ul>
                 </li>
-                <li><b>Hover On + On Icon</b>
-                    <ul>
-                        <li>Alt tag appears below the cursor.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + Off Icon</b>
-                    <ul>
-                        <li>Alt tag below the cursor disappears.</li>
-                    </ul>
-                </li>
                 <li><b>Hover Off</b>
                     <ul>
                         <li>Cursor changes back to pointer.</li>
@@ -127,8 +104,6 @@
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
                         <li>Side panel slides out to the right side of the screen.</li>
-                        <li>Square area around icon changes from light green to white.</li>
-                        <li>Rounded green bar disappears.</li>
                     </ul>
                 </li>
             </ul>
@@ -141,33 +116,19 @@
                     <ul>
                         <li>Cursor changes to finger.</li>
                         <li>Square area around icon quickly fades from white to light gray.</li>
-                        <li>Rounded green bar quickly fades in on the right edge of the square area.</li>
                         <li>"Memo" tagline appears to the left of the square area.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + On Icon</b>
-                    <ul>
-                        <li>Alt tag appears below the cursor.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + Off Icon</b>
-                    <ul>
-                        <li>Alt tag below the cursor disappears.</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
                         <li>Cursor changes back to pointer.</li>
                         <li>Square area around icon quickly fades back to white.</li>
-                        <li>Rounded green bar quickly fades out.</li>
                         <li>"Memo" tagline disappears.</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
                         <li>Side panel slides in from the right side of the screen.</li>
-                        <li>Square area around icon changes from light gray to light green.</li>
-                        <li>Rounded green bar remains active.</li>
                     </ul>
                 </li>
             </ul>
@@ -179,16 +140,6 @@
                         <li>"Memo" tagline appears to the left of the square area.</li>
                     </ul>
                 </li>
-                <li><b>Hover On + On Icon</b>
-                    <ul>
-                        <li>Alt tag appears below the cursor.</li>
-                    </ul>
-                </li>
-                <li><b>Hover On + Off Icon</b>
-                    <ul>
-                        <li>Alt tag below the cursor disappears.</li>
-                    </ul>
-                </li>
                 <li><b>Hover Off</b>
                     <ul>
                         <li>Cursor changes back to pointer.</li>
@@ -198,8 +149,6 @@
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
                         <li>Side panel slides out to the right side of the screen.</li>
-                        <li>Square area around icon changes from light green to white.</li>
-                        <li>Rounded green bar disappears.</li>
                     </ul>
                 </li>
             </ul>
@@ -212,15 +161,16 @@
             </ul>
             <h3>Modes</h3>
             <ul>
-                <li>Memo panel with a form to create memos, created memos, and an x to exit the panel.</li>
+                <li>Memo panel appears.</li>
             </ul>
         </div>
     </section>
-    
+
     <script>
-        const button = document.querySelector('label');
-        button.addEventListener('click', _ => {
-        document.getElementsByClassName('sidebar-modal').classList.toggle('collapsed');
+        const label = document.querySelector('label');
+
+        label.addEventListener('click', _ => {
+            document.getElementById('sidebar').classList.toggle('collapsed');
         })
     </script>
 </body>
