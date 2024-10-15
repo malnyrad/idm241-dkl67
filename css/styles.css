@@ -12,9 +12,11 @@
 
 html {
     --black: #212121;
-    --light-gray: #E9EBED;
+    --light-gray: #F2F2F2;
+    --gray: #EDEDED;
     --green: #2ECC87;
     --white: #FFFFFF;
+    height: 100%;
 }
 
 body {
@@ -22,6 +24,8 @@ body {
     background-color: var(--white);
     height: 100vh;
     margin: 0;
+    height: 100%;
+    position: relative;
 }
 
 header {

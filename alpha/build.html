@@ -3,18 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDM-241-001 | alpha description</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>IDM-241-001 | alpha build</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/microinteractions.css">
 </head>
 <body>
     <header>
-        <a href="https://timetreeapp.com" target="_blank"><img src="files/TimeTree_Green_Rectangle.svg" alt=""></a>
-        <!--<div class="button-container">
-            <a href="">&lt;</a>
-            <a href="test.html">&gt;</a>
-        </div>-->
-        <h1>Alpha Description</h1>
+        <a href="https://timetreeapp.com" target="_blank"><img src="../files/TimeTree_Green_Rectangle.svg" alt=""></a>
+        <h1>Alpha Build</h1>
     </header>
+
+    <div class="alpha-container">
+        <div class="sidebar-modal collapsed">
+            <p>hi</p>
+        </div>
+        <input type="checkbox" id="memo"/>
+        <ul class="sidebar">
+            <li class="sidebar-item">
+                <label for="memo"><span class="icon memo"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Memo</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="members"><span class="icon members"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Members</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="calendar"><span class="icon calendar"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Calendar Settings</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="notices"><span class="icon notices"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Notices</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
     <section class="description">
         <div class="content">
             <h2>Triggers</h2>
@@ -180,10 +216,12 @@
             </ul>
         </div>
     </section>
-    <section class="video">
-        <video controls>
-            <source src="files/memo_microinteraction.mp4" type="video/mp4">
-        </video>
-    </section>
+    
+    <script>
+        const button = document.querySelector('label');
+        button.addEventListener('click', _ => {
+        document.getElementsByClassName('sidebar-modal').classList.toggle('collapsed');
+        })
+    </script>
 </body>
 </html>
