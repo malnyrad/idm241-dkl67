@@ -114,7 +114,7 @@ video {
 }
 
 .content-pics {
-    background-color: var(--white);
+    background-color: var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
     display: flex;
     flex-direction: column;
@@ -123,10 +123,17 @@ video {
     padding: 1rem;
 }
 
+.content-pics h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 .content-pics img {
     margin-bottom: 1rem;
     margin-top: 1rem;
     max-width: 90vw;
+    outline: 2px solid #2ECC87;
+    outline-offset: 10px;
 }
 
 @media (width <= 600px) {
