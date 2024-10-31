@@ -108,9 +108,25 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 250px;
     padding: 1rem;
     width: 60%;
+}
+
+.content-pics {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-width: 250px;
+    padding: 1rem;
+}
+
+.content-pics img {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 90vw;
 }
 
 @media (width <= 600px) {
