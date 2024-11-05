@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM-241-001 | beta build</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/microinteractions.css">
+</head>
+<body>
+    <header>
+        <a href="https://timetreeapp.com" target="_blank"><img src="../files/TimeTree_Green_Rectangle.svg" alt=""></a>
+        <h1>Beta Build</h1>
+    </header>
+
+    <div class="alpha-container">
+        <div class="sidebar-modal collapsed" id="sidebar">
+            <div class="field">
+                <p>hi</p>
+            </div>
+
+        </div>
+        <input type="checkbox" id="memo"/>
+        <ul class="sidebar" id="content">
+            <li class="sidebar-item">
+                <label for="memo"><span class="icon memo"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Memo</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="members"><span class="icon members"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Members</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="calendar"><span class="icon calendar"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Calendar Settings</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <label for="notices"><span class="icon notices"></span></label>
+                <div class="tagline">
+                    <p class="tagline-text">Notices</p>
+                    <span class="tagline-bubble"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    
+    <section class="description">
+        <div class="content">
+            <h2>Triggers</h2>
+            <h3>Icon Sidebar (Memo)</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Rules</h2>
+            <h3>Memo (Default)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger.</li>
+                        <li>Square area around icon quickly fades from white to light gray.</li>
+                        <li>"Memo" tagline appears to the left of the square area.</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor changes back to pointer.</li>
+                        <li>Square area around icon quickly fades back to white.</li>
+                        <li>"Memo" tagline disappears.</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel slides to the left from the right side of the screen (offscreen).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Memo (Selected)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger.</li>
+                        <li>"Memo" tagline appears to the left of the square area.</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor changes back to pointer.</li>
+                        <li>"Memo" tagline disappears.</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel slides to right (offscreen) from the left.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Feedback</h2>
+            <h3>Memo (Default)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger.</li>
+                        <li>Square area around icon quickly fades from white to light gray.</li>
+                        <li>"Memo" tagline appears to the left of the square area.</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor changes back to pointer.</li>
+                        <li>Square area around icon quickly fades back to white.</li>
+                        <li>"Memo" tagline disappears.</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel slides to the left from the right side of the screen (offscreen).</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Memo (Selected)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger.</li>
+                        <li>"Memo" tagline appears to the left of the square area.</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor changes back to pointer.</li>
+                        <li>"Memo" tagline disappears.</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel slides to right (offscreen) from the left.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Loops &amp; Modes</h2>
+            <h3>Loops</h3>
+            <ul>
+                <li>N/A</li>
+            </ul>
+            <h3>Modes</h3>
+            <ul>
+                <li>N/A</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const label = document.querySelector('label');
+
+        label.addEventListener('click', _ => {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        })
+    </script>
+</body>
+</html>
