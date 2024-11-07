@@ -297,3 +297,24 @@ label:hover + .tagline {
     transition: 0.2s ease-in-out;
     transition-delay: 1s;
 }
+
+.green-bg, .green-bg:hover {
+    background-color: var(--light-green);
+}
+
+.green-bg::after {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 44px;
+    background-color: var(--green);
+    border-radius: 4px 0px 0px 4px;
+    opacity: 1;
+    content: "";
+}
+
+.green-bg:active {
+    background-color: var(--green);
+}
