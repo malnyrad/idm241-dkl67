@@ -18,33 +18,38 @@
             <div class="field">
                 <p>hi</p>
             </div>
-
+        </div>
+        <div class="popup-modal" id="popup">
+            <div>
+                <p>test</p>
+            </div>
         </div>
         <input type="checkbox" id="memo"/>
+        <input type="checkbox" id="members"/>
         <ul class="sidebar" id="content">
             <li class="sidebar-item">
-                <label for="memo"><span class="icon memo"></span></label>
+                <label for="memo" class="label-1 expanding"><span class="icon memo"></span></label>
                 <div class="tagline">
                     <p class="tagline-text">Memo</p>
                     <span class="tagline-bubble"></span>
                 </div>
             </li>
             <li class="sidebar-item">
-                <label for="members"><span class="icon members"></span></label>
+                <label for="members" class="label-2 popup" onclick="openPop()"><span class="icon members"></span></label>
                 <div class="tagline">
                     <p class="tagline-text">Members</p>
                     <span class="tagline-bubble"></span>
                 </div>
             </li>
             <li class="sidebar-item">
-                <label for="calendar"><span class="icon calendar"></span></label>
+                <label for="calendar" class="label-3 expanding"><span class="icon calendar"></span></label>
                 <div class="tagline">
                     <p class="tagline-text">Calendar Settings</p>
                     <span class="tagline-bubble"></span>
                 </div>
             </li>
             <li class="sidebar-item">
-                <label for="notices"><span class="icon notices"></span></label>
+                <label for="notices" class="label-4 popup"><span class="icon notices"></span></label>
                 <div class="tagline">
                     <p class="tagline-text">Notices</p>
                     <span class="tagline-bubble"></span>
@@ -173,6 +178,11 @@
         label.addEventListener('click', _ => {
             document.getElementById('sidebar').classList.toggle('collapsed');
         })
+
+        function openPop() {
+            const popDialog = document.getElementById("popup");
+            popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
+        }
     </script>
 </body>
 </html>
