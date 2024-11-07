@@ -25,16 +25,32 @@
 }
 
 #sidebar {
-background: var(--white);
-width: 40%;
+    background: var(--white);
+    height: 256px;
+    width: 40%;
 }
 
 #sidebar.collapsed {
-width: 0;
+    width: 0;
 }
 
 #sidebar.collapsed + #content {
-width: 100%;
+    width: 100%;
+}
+
+.field {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid var(--light-gray);
+    border-left: 1px solid var(--light-gray);
+}
+
+.field input {
+    outline: none;
+    box-shadow: none;
 }
 
 .radio {
@@ -42,7 +58,7 @@ width: 100%;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     margin: 0px;
     padding: 0px;
@@ -61,23 +77,40 @@ width: 100%;
 }
 
 .memo-input {
-display: block;
-box-sizing: border-box;
-width: 100%;
-margin: 0px;
-padding: 10px 12px;
-color: var(--black);
-font-family: Helvetica, Arial, sans-serif;
-font-weight: normal;
-font-size: 0.875rem;
-line-height: 1.2;
-border: 0px;
-border-radius: 8px 8px 0px 0px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 12px;
+    color: var(--black);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    border: 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .memo-input::placeholder {
     color: var(--dark-gray);
-  }
+}
+
+.memo-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 180px;
+    border-left: 1px solid var(--light-gray);
+}
+
+.memo-field p {
+    color: var(--dark-gray);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
 
   /**/
 
@@ -128,6 +161,12 @@ border-radius: 8px 8px 0px 0px;
 
 .notices {
     background: url(../files/notices.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.save {
+    background: url(../files/save.svg) no-repeat;
     background-size: contain;
     background-position: center;
 }
