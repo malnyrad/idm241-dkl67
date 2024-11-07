@@ -37,6 +37,48 @@ width: 0;
 width: 100%;
 }
 
+.radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border: 1px solid var(--dark-gray);
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.radio-inner {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--green);
+}
+
+.memo-input {
+display: block;
+box-sizing: border-box;
+width: 100%;
+margin: 0px;
+padding: 10px 12px;
+color: var(--black);
+font-family: Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 0.875rem;
+line-height: 1.2;
+border: 0px;
+border-radius: 8px 8px 0px 0px;
+}
+
+.memo-input::placeholder {
+    color: var(--dark-gray);
+  }
+
   /**/
 
 #popup {
