@@ -118,12 +118,14 @@
     /*visibility: hidden;*/
     right: -10rem;
     position: relative;
-    border: 2px solid black;
     padding: 1px;
     display: inline-block;
     width: 20rem;
     height: 10rem;
     z-index: 10;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px var(--dark-gray);
 }
 
 .sidebar-item {
