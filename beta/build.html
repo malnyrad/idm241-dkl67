@@ -30,7 +30,7 @@
         <input type="checkbox" id="members"/>
         <ul class="sidebar" id="content">
             <li class="sidebar-item">
-                <label for="memo" class="label-1 expanding"><span class="icon memo"></span></label>
+                <label for="memo" class="label-1 expanding" id="memo-label" onclick="greenToggle()"><span class="icon memo"></span></label>
                 <div class="tagline">
                     <p class="tagline-text">Memo</p>
                     <span class="tagline-bubble"></span>
@@ -189,6 +189,12 @@
         function openPop() {
             const popDialog = document.getElementById("popup");
             popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
+        }
+
+        let greenBg = document.getElementById("memo-label");
+
+        function greenToggle() {
+            greenBg.classList.toggle("green-bg");
         }
     </script>
 </body>
