@@ -1,4 +1,3 @@
-
 .alpha-container {
     display: flex;
     flex-direction: row-reverse;
@@ -84,20 +83,38 @@ input[type=checkbox] {
 }
 
 label {
+    background-color: var(--white);
+    border-left: 1px solid var(--gray);
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
-    border-left: 1px solid var(--gray);
-    background-color: var(--white);
-    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
 label:hover {
     background-color: var(--light-gray);
-    transition: 0.2s ease-in-out;
 }
+
+label::after {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 44px;
+    background-color: var(--green);
+    border-radius: 4px 0px 0px 4px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    content: "";
+}
+
+label:hover::after {
+    opacity: 1;
+  }
 
 label:active {
     background-color: var(--light-green);
