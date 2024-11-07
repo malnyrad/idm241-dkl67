@@ -255,6 +255,11 @@ label:active {
     background-color: var(--dark-gray);
 }
 
+label:active span {
+    transform: scale(0.85);
+    transition: 0.2s ease-in-out;
+}
+
 .tagline {
     display: flex;
     flex-direction: row;
