@@ -182,7 +182,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     transition: 0.2s ease-in-out;
 }
@@ -317,4 +317,87 @@ label:hover + .tagline {
 
 .green-bg:active {
     background-color: var(--green);
+}
+
+.popup-1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    max-height: 75px;
+}
+
+.pfp-circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: var(--dark-gray);
+}
+
+.popup-1 p {
+    color: var(--black);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+label.switch {
+    position: relative;
+    display: inline-block;
+    min-width: 0px;
+    width: 50px;
+    height: 25px;
+}
+
+label.switch:hover {
+    background-color: transparent;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-gray);
+    transition: 0.4s ease-in-out;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white);
+    transition: 0.4s ease-in-out;
+}
+  
+input:checked + .slider {
+    background-color: var(--green);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--green);
+}
+  
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
 }
