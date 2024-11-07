@@ -40,7 +40,15 @@ width: 100%;
   /**/
 
 #popup {
-    visibility: hidden;
+    /*visibility: hidden;*/
+    right: -10rem;
+    position: relative;
+    border: 2px solid black;
+    padding: 1px;
+    display: inline-block;
+    width: 20rem;
+    height: 10rem;
+    z-index: 10;
 }
 
 .sidebar-item {
@@ -116,9 +124,51 @@ label:hover {
     content: "";
 }
 
+.label-2::after {
+    position: absolute;
+    top: 68px;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 44px;
+    background-color: var(--green);
+    border-radius: 4px 0px 0px 4px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    content: "";
+}
+
+.label-3::after {
+    position: absolute;
+    top: 128px;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 44px;
+    background-color: var(--green);
+    border-radius: 4px 0px 0px 4px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    content: "";
+}
+
+.label-4::after {
+    position: absolute;
+    top: 188px;
+    right: 0px;
+    display: block;
+    width: 3px;
+    height: 44px;
+    background-color: var(--green);
+    border-radius: 4px 0px 0px 4px;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    content: "";
+}
+
 label:hover::after {
     opacity: 1;
-  }
+}
 
 label:active {
     background-color: var(--dark-gray);
