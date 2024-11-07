@@ -59,122 +59,396 @@
             </li>
         </ul>
         <div id="popup">
-            <div class>
-                <p>test</p>
+            <div class="popup-1">
+                <div class="pfp-circle"></div>
+                <p>Your Events</p>
+                <!--<label class="switch">
+                    //<input type="checkbox">
+                    //<span class="slider round"></span>
+                </label>-->
             </div>
         </div>
     </div>
 
-    
     <section class="description">
         <div class="content">
             <h2>Triggers</h2>
-            <h3>Icon Sidebar (Memo)</h3>
+            <h3>Icon Sidebar (Expanding) - Default</h3>
             <ul>
                 <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
                 <li>Hover Off</li>
+                <li>Mouse Down</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Icon Sidebar (Expanding) - Active</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
                 <li>On Click (Mouse Up)</li>
             </ul>
         </div>
         <div class="content">
             <h2>Rules</h2>
-            <h3>Memo (Default)</h3>
+            <h3>Icon Sidebar (Expanding) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
-                        <li>Cursor changes to finger.</li>
-                        <li>Square area around icon quickly fades from white to light gray.</li>
-                        <li>"Memo" tagline appears to the left of the square area.</li>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
-                        <li>Cursor changes back to pointer.</li>
-                        <li>Square area around icon quickly fades back to white.</li>
-                        <li>"Memo" tagline disappears.</li>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
-                        <li>Side panel slides to the left from the right side of the screen (offscreen).</li>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light green</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Side panel slides to the left from the right side of the screen (offscreen)</li>
                     </ul>
                 </li>
             </ul>
-            <h3>Memo (Selected)</h3>
+            <h3>Icon Sidebar (Expanding) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
-                        <li>Cursor changes to finger.</li>
-                        <li>"Memo" tagline appears to the left of the square area.</li>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
-                        <li>Cursor changes back to pointer.</li>
-                        <li>"Memo" tagline disappears.</li>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to bright green</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
-                        <li>Side panel slides to right (offscreen) from the left.</li>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Side panel slides to the right side of the screen (offscreen) from the left</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light green</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Pop-up fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar, on top of the popup</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out on the left side of the sidebar, on top of the popup</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to bright green</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Pop-up fades out on the left side of the sidebar</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="content">
             <h2>Feedback</h2>
-            <h3>Memo (Default)</h3>
+            <h3>Icon Sidebar (Expanding) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
-                        <li>Cursor changes to finger.</li>
-                        <li>Square area around icon quickly fades from white to light gray.</li>
-                        <li>"Memo" tagline appears to the left of the square area.</li>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
-                        <li>Cursor changes back to pointer.</li>
-                        <li>Square area around icon quickly fades back to white.</li>
-                        <li>"Memo" tagline disappears.</li>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
-                        <li>Side panel slides to the left from the right side of the screen (offscreen).</li>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light green</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Side panel slides to the left from the right side of the screen (offscreen)</li>
                     </ul>
                 </li>
             </ul>
-            <h3>Memo (Selected)</h3>
+            <h3>Icon Sidebar (Expanding) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
-                        <li>Cursor changes to finger.</li>
-                        <li>"Memo" tagline appears to the left of the square area.</li>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
                     </ul>
                 </li>
                 <li><b>Hover Off</b>
                     <ul>
-                        <li>Cursor changes back to pointer.</li>
-                        <li>"Memo" tagline disappears.</li>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to bright green</li>
                     </ul>
                 </li>
                 <li><b>On Click (Mouse Up)</b>
                     <ul>
-                        <li>Side panel slides to right (offscreen) from the left.</li>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Side panel slides to the right side of the screen (offscreen) from the left</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light green</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Pop-up fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar, on top of the popup</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out on the left side of the sidebar, on top of the popup</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to bright green</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Icon size returns to default</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Tagline disappears on the left side of the sidebar</li>
+                        <li>Pop-up fades out on the left side of the sidebar</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="content">
             <h2>Loops &amp; Modes</h2>
-            <h3>Loops</h3>
+            <h3>Icon Sidebar (Expanding) - Default</h3>
             <ul>
-                <li>N/A</li>
+                <li><b>Loops</b>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </li>
+                <li><b>Modes - On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel becomes visible on the right of the sidebar</li>
+                        <li>User becomes able to interact with side panel content</li>
+                    </ul>
+                </li>
             </ul>
-            <h3>Modes</h3>
+            <h3>Icon Sidebar (Expanding) - Active</h3>
             <ul>
-                <li>N/A</li>
+                <li><b>Loops</b>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </li>
+                <li><b>Modes - On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Side panel becomes hidden on the right of the sidebar</li>
+                        <li>User becomes unable to interact with side panel content</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <ul>
+                <li><b>Loops</b>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </li>
+                <li><b>Modes - On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Pop-up modal becomes visible on the left of the sidebar</li>
+                        <li>User becomes able to interact with pop-up content</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <ul>
+                <li><b>Loops</b>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </li>
+                <li><b>Modes - On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Pop-up modal becomes hidden on the left of the sidebar</li>
+                        <li>User becomes unable to interact with pop-up content</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </section>
