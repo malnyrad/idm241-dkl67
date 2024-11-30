@@ -117,7 +117,6 @@
     box-shadow: 0px 5px 5px var(--dark-gray);
     right: -10rem;
     position: relative;
-    padding: 1px;
     display: inline-block;
     width: 20rem;
     height: 20rem;
@@ -279,6 +278,7 @@ label:active span {
     align-items: center;
     padding: 2px 2px 2px 2px;
     opacity: 0;
+    visibility: hidden;
     z-index: 1000;
 }
 
@@ -309,6 +309,7 @@ label:hover + .tagline {
     opacity: 1;
     transition: 0.2s ease-in-out;
     transition-delay: 1s;
+    visibility: visible;
 }
 
 .green-bg, .green-bg:hover {
@@ -367,17 +368,15 @@ label:hover + .tagline {
 }
 
 label.switch {
+    background-color: transparent;
     border-left: none;
+    cursor: pointer;
     display: inline-block;
     position: relative;
     margin-left: 98px;
     min-width: 0px;
     width: 50px;
     height: 25px;
-}
-
-label.switch:hover {
-    background-color: transparent;
 }
 
 .switch input {
@@ -396,6 +395,10 @@ label.switch:hover {
     background-color: var(--dark-gray);
     transition: 0.4s ease-in-out;
 }
+
+.slider:active {
+    background-color: var(--darker-gray);
+}
   
 .slider:before {
     position: absolute;
@@ -403,7 +406,7 @@ label.switch:hover {
     height: 18px;
     width: 18px;
     left: 4px;
-    bottom: 4px;
+    bottom: 3.5px;
     background-color: var(--white);
     transition: 0.4s ease-in-out;
 }
@@ -432,11 +435,44 @@ input:checked + .slider:before {
     outline: none;
 }
 
-.popup-3 header {
+.popup-3 .header {
     box-sizing: border-box;
     height: 36px;
     padding: 12px 16px 8px;
     color: var(--darker-gray);
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 0.75rem;
+    font-weight: normal;
+    font-size: 0.85rem;
+  }
+
+  .member-listing {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+  }
+
+  .member-listing:hover {
+    background-color: var(--light-green);
+    transition: 0.2s ease-in-out;
+  }
+
+  .member-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+
+  .member-text p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .member-text p.member-label {
+    border-radius: 5px;
+    background-color: var(--darker-gray);
+    color: var(--white);
+    text-align: center;
   }
