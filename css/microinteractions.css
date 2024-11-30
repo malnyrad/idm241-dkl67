@@ -1,8 +1,9 @@
 .alpha-container {
+    align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -539,3 +540,16 @@ input:checked + .slider:before {
     content: 'Copied!';
     display: block;
  }
+
+ #popup {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+  }
+
+  #popup.fade {
+    opacity:0;
+  }
