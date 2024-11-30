@@ -496,9 +496,14 @@
             document.getElementById('sidebar').classList.toggle('collapsed');
         })
 
-        function openPop() {
-            const popDialog = document.getElementById("popup");
-            popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
+        //function openPop() {
+        //    const popDialog = document.getElementById("popup");
+        //    popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
+        //}
+
+        let popup = document.getElementById('popup');
+        document.getElementById('members').onclick = function() {
+        popup.classList.toggle('fade');
         }
 
         let greenBg = document.getElementById("memo-label");
