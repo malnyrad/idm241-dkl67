@@ -99,8 +99,8 @@
             <div class="popup-4">
                 <div class="header">Invitation Link</div>
                 <div class="copy-link">
-                    <input class="link-box" readonly="" value="https://timetr.ee/s/lDPTWQbHR3-jhs...">
-                    <button type="button"></button>
+                    <input id="copy" class="link-box" readonly="" value="https://timetr.ee/s/lDPTWQbHR3-jhs">
+                    <button type="button" onclick="copyText()"></button>
                 </div>
             </div>
         </div>
@@ -490,27 +490,31 @@
     </section>
 
     <script>
+        //toggle sidebar
         const label = document.querySelector('label');
-
         label.addEventListener('click', _ => {
             document.getElementById('sidebar').classList.toggle('collapsed');
         })
 
-        //function openPop() {
-        //    const popDialog = document.getElementById("popup");
-        //    popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
-        //}
-
+        //toggle popup
         let popup = document.getElementById('popup');
         document.getElementById('members').onclick = function() {
         popup.classList.toggle('fade');
         }
 
+        //active bg
         let greenBg = document.getElementById("memo-label");
-
         function greenToggle() {
             greenBg.classList.toggle("green-bg");
         }
+        
+        //copy link
+        //function copyText() {
+        //    let copyText = document.getElementById("copy");
+        //    copyText.select();
+        //    copyText.setSelectionRange(0, 99999);
+        //    navigator.clipboard.writeText(copyText.value);
+        //}
     </script>
 </body>
 </html>
