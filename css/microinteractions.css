@@ -601,13 +601,28 @@ input:checked + .slider:before {
     z-index: 11;
 }
 
-.user-popup:hover + .popup-j {
+.popup-v {
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    opacity: 0;
+    padding: 15px;
+    position: absolute;
+    right: 10rem;
+    top: 17.3rem;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 11;
+}
+
+.user-popup:hover + .popup-j, .user-popup:hover + .popup-v {
     opacity: 1;
     transition: 0.2s ease-in-out;
     visibility: visible;
 }
 
-.popup-j-content {
+.popup-j-content, .popup-v-content {
     align-items: center;
     display: flex;
     flex-direction: row;
