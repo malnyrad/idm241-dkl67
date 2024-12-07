@@ -5,7 +5,13 @@
     justify-content: center;
     margin-right: 5rem;
     margin-top: 1rem;
-    width: 90%;
+    width: 100%;
+}
+
+@media (width <= 700px) {
+    .alpha-container {
+        margin-right: 2rem;
+    }
 }
 
 .sidebar { 
@@ -121,7 +127,20 @@
     display: inline-block;
     width: 23rem;
     height: 24rem;
+    visibility: hidden;
     z-index: 10;
+
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+}
+
+#popup.fade {
+    opacity: 1;
+    visibility: visible;
 }
 
 .sidebar-item {
@@ -284,6 +303,48 @@ label:active span {
     z-index: 1000;
 }
 
+.tagline-switch-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    opacity: 0;
+    right: -2.75rem;
+    top: -2.5rem;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.tagline-switch-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    opacity: 0;
+    right: -2.75rem;
+    top: 7rem;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.tagline-switch-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    opacity: 0;
+    right: -2.75rem;
+    top: 11rem;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 1000;
+}
+
 .tagline-bubble {
     display: block;
     border-top: 6px solid transparent;
@@ -291,22 +352,29 @@ label:active span {
     border-left: 6px solid var(--black);
 }
 
-.tagline-text {
+.tagline-bubble-2 {
+    display: block;
+    border-top: 6px solid var(--black);
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.tagline-text, .popup-1 p.tagline-text {
     display: block;
     background-color: var(--black);
     border-radius: 8px;
-    max-width: 360px;
+    max-width: 145px;
     color: var(--white);
     font-size: 12px;
+    font-weight: normal;
     line-height: 1.75;
     text-align: center;
     padding: 6px 12px 5px;
     margin: -0.5px;
     overflow: visible;
-    white-space: nowrap;
 }
 
-label:hover + .tagline {
+label:hover + .tagline, label:hover + .tagline-switch-1, label:hover + .tagline-switch-2, label:hover + .tagline-switch-3 {
     opacity: 1;
     transition: 0.2s ease-in-out;
     transition-delay: 1s;
@@ -546,19 +614,6 @@ input:checked + .slider:before {
 .popup-4 button:focus:after, .popup-4 button:active:after {
     content: 'Copied!';
     display: block;
-}
-
-#popup {
-    opacity: 1;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3 ease-in-out;
-}
-
-#popup.fade {
-    opacity: 1;
 }
 
 .pfp-large {
