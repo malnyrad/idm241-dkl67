@@ -144,7 +144,14 @@
     <section class="description">
         <div class="content">
             <h2>Triggers</h2>
-            <h3>Icon Sidebar (Expanding) - Default</h3>
+            <h3>Icon Sidebar (All)</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
+            </ul>
+            <h3>Icon Sidebar (Memo) - Default</h3>
             <ul>
                 <li>Hover On</li>
                 <li>Hover On + 1s Delay</li>
@@ -152,7 +159,7 @@
                 <li>Mouse Down</li>
                 <li>On Click (Mouse Up)</li>
             </ul>
-            <h3>Icon Sidebar (Expanding) - Active</h3>
+            <h3>Icon Sidebar (Memo) - Active</h3>
             <ul>
                 <li>Hover On</li>
                 <li>Hover On + 1s Delay</li>
@@ -160,7 +167,7 @@
                 <li>Mouse Down</li>
                 <li>On Click (Mouse Up)</li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <h3>Icon Sidebar (Members) - Default</h3>
             <ul>
                 <li>Hover On</li>
                 <li>Hover On + 1s Delay</li>
@@ -168,18 +175,79 @@
                 <li>Mouse Down</li>
                 <li>On Click (Mouse Up)</li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <h3>Icon Sidebar (Members) - Active</h3>
             <ul>
                 <li>Hover On</li>
                 <li>Hover On + 1s Delay</li>
                 <li>Hover Off</li>
                 <li>Mouse Down</li>
                 <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Popup (Members) - Member Listing</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+            </ul>
+            <h3>Popup (Members) - Member Profile</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Default</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Inactive</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover On + 1s Delay</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
+                <li>On Click (Mouse Up)</li>
+            </ul>
+            <h3>Popup (Members) - Copy Link</h3>
+            <ul>
+                <li>Hover On</li>
+                <li>Hover Off</li>
+                <li>Mouse Down</li>
             </ul>
         </div>
         <div class="content">
             <h2>Rules</h2>
-            <h3>Icon Sidebar (Expanding) - Default</h3>
+            <h3>Icon Sidebar (All)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Memo) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -216,7 +284,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Expanding) - Active</h3>
+            <h3>Icon Sidebar (Memo) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -249,7 +317,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <h3>Icon Sidebar (Members) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -286,7 +354,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <h3>Icon Sidebar (Members) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -316,13 +384,147 @@
                         <li>Background color changes to light grey</li>
                         <li>Tagline disappears on the left side of the sidebar</li>
                         <li>Pop-up fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Popup (Members) - Member Listing</h3>
+            <ul>
+                <li><b>Hover On</b></li>
+                    <ul>
+                        <li>Background color changes to light green</li>
+                    </ul>
+                    <li><b>Hover Off</b></li>
+                    <ul>
+                        <li>Background color returns to white</li>
+                    </ul>
+            </ul>
+            <h3>Popup (Members) - Member Profile</h3>
+            <ul>
+                <li><b>Hover On</b></li>
+                    <ul>
+                        <li>Popup fades in under the profile picture and user text</li>
+                    </ul>
+                    <li><b>Hover Off</b></li>
+                    <ul>
+                        <li>Popup fades out under the profile picture and user text</li>
+                    </ul>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Default</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in above the button</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out above the button</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button size decreases by 15%</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Button size returns to default</li>
+                        <li>Toggle slider slides to the left</li>
+                        <li>Toggle background color changes to light grey</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Inactive</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in above the button</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out above the button</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button size decreases by 15%</li>
+                        <li>Toggle background color changes to dark grey</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Button size returns to default</li>
+                        <li>Toggle slider slides to the right</li>
+                        <li>Toggle background color changes to bright green</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Popup (Members) - Copy Link</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to dark green</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to bright green</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button text changes from "Copy to Clipboard" to "Copied!"</li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="content">
             <h2>Feedback</h2>
-            <h3>Icon Sidebar (Expanding) - Default</h3>
+            <h3>Icon Sidebar (All)</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to light grey</li>
+                        <li>Rounded green bar appears on right edge</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to white</li>
+                        <li>Rounded green bar on right edge disappears</li>
+                        <li>Tagline fades out on the left side of the sidebar</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Icon size decreases by 15%</li>
+                        <li>Background color changes to dark grey</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Icon Sidebar (Memo) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -359,7 +561,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Expanding) - Active</h3>
+            <h3>Icon Sidebar (Memo) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -392,7 +594,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <h3>Icon Sidebar (Members) - Default</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -429,7 +631,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <h3>Icon Sidebar (Members) - Active</h3>
             <ul>
                 <li><b>Hover On</b>
                     <ul>
@@ -462,10 +664,115 @@
                     </ul>
                 </li>
             </ul>
+            <h3>Popup (Members) - Member Listing</h3>
+            <ul>
+                <li><b>Hover On</b></li>
+                    <ul>
+                        <li>Background color changes to light green</li>
+                    </ul>
+                    <li><b>Hover Off</b></li>
+                    <ul>
+                        <li>Background color returns to white</li>
+                    </ul>
+            </ul>
+            <h3>Popup (Members) - Member Profile</h3>
+            <ul>
+                <li><b>Hover On</b></li>
+                    <ul>
+                        <li>Popup fades in under the profile picture and user text</li>
+                    </ul>
+                    <li><b>Hover Off</b></li>
+                    <ul>
+                        <li>Popup fades out under the profile picture and user text</li>
+                    </ul>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Default</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in above the button</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out above the button</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button size decreases by 15%</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Button size returns to default</li>
+                        <li>Toggle slider slides to the left</li>
+                        <li>Toggle background color changes to light grey</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Popup (Members) - Toggle Button, Inactive</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                    </ul>
+                </li>
+                <li><b>Hover On + 1s Delay</b>
+                    <ul>
+                        <li>Tagline fades in above the button</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Tagline fades out above the button</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button size decreases by 15%</li>
+                        <li>Toggle background color changes to dark grey</li>
+                    </ul>
+                </li>
+                <li><b>On Click (Mouse Up)</b>
+                    <ul>
+                        <li>Button size returns to default</li>
+                        <li>Toggle slider slides to the right</li>
+                        <li>Toggle background color changes to bright green</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Popup (Members) - Copy Link</h3>
+            <ul>
+                <li><b>Hover On</b>
+                    <ul>
+                        <li>Cursor changes to finger</li>
+                        <li>Background color changes to dark green</li>
+                    </ul>
+                </li>
+                <li><b>Hover Off</b>
+                    <ul>
+                        <li>Cursor returns to default</li>
+                        <li>Background color returns to bright green</li>
+                    </ul>
+                </li>
+                <li><b>Mouse Down</b>
+                    <ul>
+                        <li>Button text changes from "Copy to Clipboard" to "Copied!"</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="content">
             <h2>Loops &amp; Modes</h2>
-            <h3>Icon Sidebar (Expanding) - Default</h3>
+            <h3>Icon Sidebar (Memo) - Default</h3>
             <ul>
                 <li><b>Loops</b>
                     <ul>
@@ -479,7 +786,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Expanding) - Active</h3>
+            <h3>Icon Sidebar (Memo) - Active</h3>
             <ul>
                 <li><b>Loops</b>
                     <ul>
@@ -493,7 +800,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Default</h3>
+            <h3>Icon Sidebar (Members) - Default</h3>
             <ul>
                 <li><b>Loops</b>
                     <ul>
@@ -507,7 +814,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3>Icon Sidebar (Pop-up) - Active</h3>
+            <h3>Icon Sidebar (Members) - Active</h3>
             <ul>
                 <li><b>Loops</b>
                     <ul>
