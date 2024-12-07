@@ -608,6 +608,7 @@ input:checked + .slider:before {
 
 .popup-4 button:hover {
     background-color: #29B87A;
+    cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
