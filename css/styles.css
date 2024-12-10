@@ -149,6 +149,12 @@ video {
     text-transform: uppercase;
 }
 
+.content-image {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
 @media (width <= 600px) {
     header {
         display: flex;
