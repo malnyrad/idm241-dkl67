@@ -138,6 +138,17 @@ video {
     outline-offset: 10px;
 }
 
+.hero-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.case-study h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @media (width <= 600px) {
     header {
         display: flex;
